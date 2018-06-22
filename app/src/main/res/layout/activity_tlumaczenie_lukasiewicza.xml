@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer.npkonwerter.TlumaczenieLukasiewicza">
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/b7"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/b7"
+        android:layout_toRightOf="@+id/b7"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/b8"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/b8"
+        android:layout_toRightOf="@+id/b8"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/b7"
+        android:layout_alignStart="@+id/b7"
+        android:layout_below="@+id/b7"
+        android:layout_marginTop="5dp"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/b8"
+        android:layout_alignStart="@+id/b8"
+        android:layout_alignTop="@+id/b4"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/b9"
+        android:layout_alignStart="@+id/b9"
+        android:layout_alignTop="@+id/b5"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/b4"
+        android:layout_alignStart="@+id/b4"
+        android:layout_below="@+id/b4"
+        android:layout_marginTop="5dp"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/b1"
+        android:layout_alignStart="@+id/b5"
+        android:layout_alignTop="@+id/b1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/b2"
+        android:layout_alignStart="@+id/b6"
+        android:layout_alignTop="@+id/b1"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/b1"
+        android:layout_alignStart="@+id/b1"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:layout_alignLeft="@+id/b1" />
+
+    <Button
+        android:id="@+id/bSpacja"
+        android:layout_width="155dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/b2"
+        android:layout_alignStart="@+id/b2"
+        android:layout_marginTop="5dp"
+        android:text="Spacja"
+        android:layout_alignLeft="@+id/b1" />
+
+    <Button
+        android:id="@+id/bPlus"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/b9"
+        android:layout_toEndOf="@+id/b9"
+        android:layout_marginLeft="10dp"
+        android:text="+"
+        android:layout_toRightOf="@+id/b9" />
+
+    <Button
+        android:id="@+id/bMinus"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/b6"
+        android:layout_below="@+id/bPlus"
+        android:layout_alignStart="@+id/bPlus"
+        android:text="-"
+        android:layout_alignLeft="@+id/bPlus" />
+
+    <Button
+        android:id="@+id/bRazy"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/b3"
+        android:layout_below="@+id/bMinus"
+        android:text="*"
+        android:layout_alignLeft="@+id/bPlus" />
+
+    <Button
+        android:id="@+id/bPodzielic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/b0"
+        android:layout_below="@+id/bRazy"
+        android:layout_alignStart="@+id/bPlus"
+        android:text="/"
+        android:layout_alignLeft="@+id/bPlus" />
+
+    <EditText
+        android:id="@+id/etDzialanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b0"
+        android:layout_marginTop="15dp"
+        android:hint="Tu pojawi sie twoje dzialanie"
+        android:textSize="18dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <EditText
+        android:id="@+id/etWynik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDzialanie"
+        android:hint="Przekonwertowane dzialanie"
+        android:textSize="18dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <Button
+        android:id="@+id/bPonow"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etDzialanie"
+        android:layout_alignLeft="@+id/bPlus"
+        android:text="Ponów"/>
+
+    <Button
+        android:id="@+id/bGotowe"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etWynik"
+        android:layout_alignLeft="@+id/b0"
+        android:layout_marginTop="10dp"
+        android:text="Konwertuj" />
+
+
+    <Button
+        android:id="@+id/bPowrot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etWynik"
+        android:layout_toRightOf="@+id/bGotowe"
+        android:layout_alignRight="@+id/bPodzielic"
+        android:layout_alignTop="@+id/bGotowe"
+        android:text="Powrot" />
+
+</RelativeLayout>

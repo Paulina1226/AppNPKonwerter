@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer.npkonwerter.TlumaczenieLukasiewiczaLogika">
+
+    <Button
+        android:id="@+id/bP"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="p" />
+
+    <Button
+        android:id="@+id/bQ"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/bP"
+        android:layout_alignTop="@+id/bP"
+        android:text="q" />
+
+    <Button
+        android:id="@+id/bR"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/bQ"
+        android:layout_alignTop="@+id/bP"
+        android:text="r" />
+
+    <Button
+        android:id="@+id/bS"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/bR"
+        android:layout_alignTop="@+id/bP"
+        android:text="s" />
+
+    <Button
+        android:id="@+id/bT"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/bS"
+        android:layout_alignTop="@+id/bP"
+        android:text="t" />
+
+    <Button
+        android:id="@+id/bNegacja"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/bP"
+        android:layout_alignLeft="@+id/bP"
+        android:text="N" />
+
+    <Button
+        android:id="@+id/bKoniunkcja"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/bNegacja"
+        android:layout_alignTop="@+id/bNegacja"
+        android:text="K" />
+
+    <Button
+        android:id="@+id/bAlternatywa"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/bKoniunkcja"
+        android:layout_alignTop="@+id/bNegacja"
+        android:text="A" />
+
+    <Button
+        android:id="@+id/bImplikacja"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/bAlternatywa"
+        android:layout_alignTop="@+id/bNegacja"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/bRownowaznosc"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/bImplikacja"
+        android:layout_alignTop="@+id/bNegacja"
+        android:text="E" />
+
+    <EditText
+        android:id="@+id/etDzialanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bNegacja"
+        android:layout_marginTop="30dp"
+        android:hint="Tu pojawi sie twoje dzialanie"
+        android:textSize="18dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <EditText
+        android:id="@+id/etWynik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Przekonwertowane dzialanie"
+        android:textSize="18dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/etDzialanie"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/bPonow"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/etDzialanie"
+        android:layout_toRightOf="@+id/etWynik"
+        android:text="Ponów"/>
+
+    <Button
+        android:id="@+id/bGotowe"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etWynik"
+        android:layout_marginTop="10dp"
+        android:text="Konwertuj" />
+
+
+    <Button
+        android:id="@+id/bPowrot"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bPonow"
+        android:layout_toRightOf="@+id/bGotowe"
+        android:layout_alignTop="@+id/bGotowe"
+        android:text="Powrot" />
+
+
+</RelativeLayout>
